@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from './../../../services/store.service'
 import { AuthService } from './../../../services/auth.service';
-import { UsersService } from './../../../services/users.service';
 import { User } from '../../../models/user.model';
 import { CategoriesService } from './../../../services/categories.service'
 import { Category } from '../../../models/category.model';
@@ -23,7 +22,6 @@ export class NavComponent implements OnInit {
   constructor(
     private storeService : StoreService,
     private authService : AuthService,
-    private usersService : UsersService,
     private categoriesService : CategoriesService,
     private router : Router,
   ) { }
